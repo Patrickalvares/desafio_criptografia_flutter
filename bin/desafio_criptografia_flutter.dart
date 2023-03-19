@@ -50,7 +50,8 @@ class CifraDeVigenere {
 }
 
 void main() {
-  while (true) {
+  int i = 0;
+  while (i < 10) {
     print('Digite um Texto a ser criptografado: ');
     String texto = stdin.readLineSync()!;
     texto = texto.replaceAll(RegExp('[^a-zA-Z]+'), '').toUpperCase();
@@ -64,5 +65,6 @@ void main() {
     print('Chave: $chave');
     print('Texto criptografado: $textoCriptografado');
     print('Texto descriptografado: $textoDescriptografado\n');
+    i++;
   }
 }
